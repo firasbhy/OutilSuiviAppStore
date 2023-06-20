@@ -1,0 +1,16 @@
+table
+{
+	
+	border-spacing: 0;
+}
+td
+{
+	color:#40E0D0;
+		 background-color:black;
+		font-weight:bold;
+
+}
+body
+{
+	background-image:url("apple.png");
+}

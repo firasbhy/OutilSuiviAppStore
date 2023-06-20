@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> chercher des nouveaux!! </title>
+ <meta charset="utf-8" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="accuiel.css" />
+</head>
+<body>
+<form method="post"  action="test.php">
+<p id="description" >pour chercher de nouveaux notification: </p> 
+<input type="submit" value="chercher" class="btn btn-primary" onclick="return lod()"  id="rech">
+<button class="btn btn-primary" type="button"  id="ld" style="display:none">
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+<p id="load" color="red" style="display:none" > cette opération prend  quelque minutes..</p>
+</form>
+</body>
+<script>
+function lod()
+{
+
+
+ var x = document.getElementById("ld");
+  var y = document.getElementById("rech");
+  var z=document.getElementById("load");
+  
+    x.style.display = "block";
+	   y.style.display = "none";
+	 z.style.display = "block";
+  
+}
+
+</script>
+</html>

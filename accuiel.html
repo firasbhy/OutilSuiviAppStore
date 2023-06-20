@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<title> accuiel</title>
+ <meta charset="utf-8" />
+ <script type="text/javascript">
+ function verif()
+ {
+    urlfixe="https://itunes.apple.com/us/developer/";
+	
+    url=document.getElementById('url');
+	
+	if(url.value.indexOf(urlfixe)==-1)
+	{
+	   url.style.backgroundColor="#DC143C";
+	   
+	}
+	else 
+	{
+	 url.style.backgroundColor="#00FF00";
+	}
+	
+ }
+ </script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="accuiel.css" />
+</head>
+<body>
+<form method="POST" action="ajout_url.php"> 
+ ajouter l'url  de dévloppeur qui vous voulez le suivre.<br>
+<label> url:</label> 
+<input type="text" name="url" id="url" onchange="verif()"> 
+<br>
+<input type="submit" value="ajouter"  class="btn btn-primary" /> 
+</form>
+</body>
+</html>
